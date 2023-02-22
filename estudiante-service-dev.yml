@@ -4,9 +4,11 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/estudiantes_db;DB_CLOSE_DELAY=-1;
+    url: jdbc:mysql://localhost:3306/estudiantes_db
     username: root
     password: root
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
   jpa:
     defer-datasource-initialization: true
     hibernate:
