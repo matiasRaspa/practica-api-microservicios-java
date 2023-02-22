@@ -7,14 +7,7 @@ spring:
     url: jdbc:mysql://localhost:3306/estudiantes_db
     username: root
     password: root
-  autoconfigure:
-    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
   jpa:
     defer-datasource-initialization: true
     hibernate:
       ddl-auto: create-drop
-logging:
-  level:
-    org:
-      hibernate:
-        stat: DEBUG
