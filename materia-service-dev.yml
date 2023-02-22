@@ -1,1 +1,13 @@
+server:
+  port: 8082
 
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/materias_db
+    username: root
+    password: root
+  jpa:
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create-drop
