@@ -11,3 +11,7 @@ spring:
     defer-datasource-initialization: true
     hibernate:
       ddl-auto: create-drop
+
+spring-doc:
+  api-docs:
+    path: /swagger-cursadas
