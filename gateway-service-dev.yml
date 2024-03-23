@@ -4,17 +4,6 @@ server:
 spring:
   cloud:
     gateway:
-      globalcors:
-          corsConfigurations:
-            '[/**]':
-              allowedOrigins: "*"
-              allowedHeaders: "*"
-              allowedMethods:
-                - GET
-                - POST
-                - PUT
-                - PATCH
-                - DELETE
       routes:
         - id: estudianteRoute #Identificando la ruta del service de producto
           uri: http://localhost:8081/ #URL donde se hará el redirect segun el predicate definido
