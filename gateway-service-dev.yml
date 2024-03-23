@@ -20,11 +20,20 @@ spring:
           uri: http://localhost:8081/ #URL donde se hará el redirect segun el predicate definido
           predicates: #RReglas de análisis de una request
             - Path=/estudiantes/**,/swagger-ui/**,/swagger-resources/**,/swagger-ui.html,/v3/api-docs,/webjars/**,/view/**,/swagger-estudiantes
+          filters:
+            - name: CorsGlobal
+              args: {}
         - id: materiaRoute #Identificando la ruta del service de producto
           uri: http://localhost:8082/ #URL donde se hará el redirect segun el predicate definido
           predicates: #RReglas de análisis de una request
             - Path=/materias/**,/swagger-ui/**,/swagger-resources/**,/swagger-ui.html,/v3/api-docs,/webjars/**,/view/**,/swagger-materias
+          filters:
+            - name: CorsGlobal
+              args: {}
         - id: cursadaRoute #Identificando la ruta del service de producto
           uri: http://localhost:8083/ #URL donde se hará el redirect segun el predicate definido
           predicates: #RReglas de análisis de una request
             - Path=/cursadas/**,/swagger-ui/**,/swagger-resources/**,/swagger-ui.html,/v3/api-docs,/webjars/**,/view/**,/swagger-cursadas
+          filters:
+            - name: CorsGlobal
+              args: {}
