@@ -2,13 +2,18 @@ package com.api.cursadaservice.service.impl;
 
 import com.api.cursadaservice.model.Cursada;
 import com.api.cursadaservice.model.dto.CursadaDTO;
+import com.api.cursadaservice.model.dto.EstudianteDTO;
+import com.api.cursadaservice.model.dto.MateriaDTO;
 import com.api.cursadaservice.repository.ICursadaRepository;
 import com.api.cursadaservice.service.ICursadaService;
+import com.api.cursadaservice.service.IEstudianteService;
+import com.api.cursadaservice.service.IMateriaService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 @Service
